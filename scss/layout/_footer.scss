@@ -50,12 +50,14 @@ footer {
 @media (min-width: 40rem) {
   .footer {
     background: url("../assets/tablet/image-footer.jpg") no-repeat;
+    background-size: cover;
   }
 }
 @media (min-width: 60rem) {
   .footer {
     padding-bottom: $spacer-700;
     background: url("../assets/desktop/image-footer.jpg") no-repeat;
+    background-size: cover;
   }
   .footer__inner {
     display: grid;
