@@ -1,0 +1,78 @@
+@use "../abstracts/variables" as *;
+
+footer {
+  margin-top: $spacer-700;
+}
+
+.footer {
+  margin-top: -1.75rem;
+  padding-bottom: $spacer-500;
+  background: $clr-cyan-600;
+  color: $clr-white;
+  position: relative;
+  background: url("/assets/mobile/image-footer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+
+  h2,
+  p,
+  .button {
+    position: relative;
+    z-index: 2;
+  }
+  &__inner {
+    padding: $spacer-500 $spacer-400;
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $clr-cyan-600;
+    opacity: 0.85;
+    z-index: 1;
+  }
+  & h2 {
+    font-size: $fs-subheading;
+    font-weight: 900;
+    margin-bottom: $spacer-300;
+  }
+  & p {
+    max-width: 47ch;
+    margin-inline: auto;
+  }
+  & .button {
+    margin-top: $spacer-300;
+  }
+}
+@media (min-width: 40rem) {
+  .footer {
+    background: url("/assets/tablet/image-footer.jpg");
+  }
+}
+@media (min-width: 60rem) {
+  .footer {
+    padding-bottom: $spacer-700;
+    background: url("/assets/desktop/image-footer.jpg");
+  }
+  .footer__inner {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    align-items: top;
+    text-align: left;
+    max-width: 70rem;
+    margin-inline: auto;
+    padding-top: $spacer-1400;
+    & h2 {
+      max-width: 12ch;
+    }
+    & p {
+      max-width: 30ch;
+    }
+    & .button {
+      margin-top: unset;
+    }
+  }
+}

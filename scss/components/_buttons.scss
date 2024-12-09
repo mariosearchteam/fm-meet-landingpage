@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as *;
+.button {
+  display: block;
+  color: $clr-white;
+  background: $clr-cyan-600;
+  text-decoration: none;
+  padding: $spacer-200 $spacer-500;
+  border-radius: $spacer-400;
+  font-weight: 900;
+  font-size: $fs-button;
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  &:hover,
+  &:focus {
+    background: $clr-cyan-400;
+  }
+  &.button--secondary {
+    background: $clr-purple-600;
+    &:hover,
+    &:focus {
+      background: $clr-purple-400;
+    }
+  }
+  & span {
+    color: $clr-cyan-300;
+  }
+}

@@ -1,0 +1,31 @@
+// fonts
+$fs-base: clamp(1rem, 2vw, 1.2rem);
+$fs-heading: clamp(2.5rem, 5vw, 4rem);
+$fs-subheading: clamp(1.8rem, 4.75vw, 2.5rem);
+$fs-small: clamp(0.775rem, 2vw, 1rem);
+$fs-button: 1rem;
+
+// colors
+$clr-cyan-600: #4d96a9;
+$clr-cyan-400: #71c0d4;
+$clr-cyan-300: #8fe3f9;
+$clr-purple-600: #855fb1;
+$clr-purple-400: #b18bdd;
+$clr-purple-300: #d9b8ff;
+$clr-slate-900: #28283d;
+$clr-slate-600: #87879d;
+$clr-slate-300: #d1d1df;
+$clr-white: #ffffff;
+
+//spacings
+$spacer-50: 0.25rem;
+$spacer-100: 0.5rem;
+$spacer-200: 1rem;
+$spacer-300: 1.5rem;
+$spacer-400: 2rem;
+$spacer-500: 2.5rem;
+$spacer-700: 3.5rem;
+$spacer-800: 4rem;
+$spacer-900: 4.5rem;
+$spacer-1000: 5rem;
+$spacer-1400: 7rem;

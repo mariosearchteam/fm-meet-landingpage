@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as *;
+.vl {
+  display: grid;
+  place-items: center;
+  &__line {
+    border-left: 1px solid $clr-slate-300;
+    height: $spacer-1000;
+  }
+  &__number {
+    border-radius: 50%;
+    border: 1px solid $clr-slate-300;
+    background: $clr-white;
+    width: $spacer-700;
+    height: $spacer-700;
+    display: grid;
+    place-items: center;
+    font-weight: 900;
+  }
+}

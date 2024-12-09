@@ -1,0 +1,111 @@
+@use "../abstracts/variables" as *;
+
+.hero {
+  margin-top: $spacer-700;
+  &__image-right {
+    display: none;
+  }
+  &__image-left img {
+    min-width: 120%;
+    margin-left: -7%;
+    object-fit: cover;
+  }
+  &__content {
+    margin-top: $spacer-700;
+  }
+  &__title {
+    margin-bottom: $spacer-300;
+    font-size: $fs-heading;
+    font-weight: 900;
+    color: $clr-slate-900;
+    line-height: 110%;
+    max-width: 10ch;
+    margin-inline: auto;
+  }
+  &__subtitle {
+    max-width: 38ch;
+    margin-inline: auto;
+  }
+  &__buttons {
+    margin-top: $spacer-300;
+    display: flex;
+    flex-direction: column;
+    gap: $spacer-200;
+  }
+}
+
+.main {
+  margin-top: $spacer-700;
+  &__gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $spacer-200;
+    margin-top: $spacer-700;
+  }
+  & img {
+    border-radius: $spacer-100;
+  }
+  &__content {
+    margin-top: $spacer-700;
+    & h3 {
+      color: $clr-cyan-600;
+      text-transform: uppercase;
+      letter-spacing: 0.25rem;
+      font-size: $fs-small;
+      font-weight: 900;
+    }
+    & h2 {
+      margin-top: $spacer-200;
+      font-size: $fs-subheading;
+      color: $clr-slate-900;
+      font-weight: 900;
+      max-width: 18ch;
+      margin-inline: auto;
+    }
+    & p {
+      margin-top: $spacer-200;
+      max-width: 47ch;
+      margin-inline: auto;
+    }
+  }
+}
+
+@media (min-width: 40rem) {
+  .hero {
+    &__buttons {
+      flex-direction: row;
+      justify-content: center;
+    }
+    .button {
+      margin: unset;
+    }
+  }
+  .main {
+    &__gallery {
+      grid-template-columns: repeat(4, 1fr);
+      gap: $spacer-200;
+      margin-top: $spacer-700;
+    }
+  }
+}
+
+@media (min-width: 60rem) {
+  .hero {
+    display: flex;
+    &__image-left img {
+      min-width: unset;
+      margin-left: -2%;
+      object-fit: unset;
+    }
+    &__image-right {
+      display: block;
+      margin-right: -2%;
+    }
+  }
+  .main {
+    margin-top: $spacer-1400;
+    &__gallery {
+      gap: $spacer-400;
+    }
+  }
+}

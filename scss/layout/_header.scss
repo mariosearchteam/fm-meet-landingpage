@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as *;
+
+.main-nav {
+  margin-top: $spacer-500;
+  & .logo img {
+    margin: 0 auto;
+  }
+}
