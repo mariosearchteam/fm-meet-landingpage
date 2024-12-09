@@ -193,13 +193,13 @@ footer {
 
 @media (min-width: 40rem) {
   .footer {
-    background: url("../assets/tablet/image-footer.jpg");
+    background: url("../assets/tablet/image-footer.jpg") no-repeat;
   }
 }
 @media (min-width: 60rem) {
   .footer {
     padding-bottom: 3.5rem;
-    background: url("../assets/desktop/image-footer.jpg");
+    background: url("../assets/desktop/image-footer.jpg") no-repeat;
   }
   .footer__inner {
     display: grid;
